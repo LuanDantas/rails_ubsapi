@@ -4,11 +4,25 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'rails', '~> 5.2.1'
+
+# Databases gem
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+
+# CORS
+gem 'rack-cors'
+gem 'rack-attack'
+
+# Use SCSS for stylesheets
+gem 'sass-rails'
+
+# Devise
+gem 'devise'
+gem 'simple_token_authentication', '~> 1.0'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
